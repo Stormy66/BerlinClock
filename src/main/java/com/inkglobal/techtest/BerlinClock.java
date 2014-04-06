@@ -1,6 +1,7 @@
 package com.inkglobal.techtest;
 
 import com.inkglobal.techtest.clock.ClockController;
+import com.inkglobal.techtest.clock.ClockManagerFactory;
 import com.inkglobal.techtest.clock.controller.BerlinClockController;
 import com.inkglobal.techtest.clock.internal.DefaultClockManager;
 import com.inkglobal.techtest.clock.view.text.PrintManager;
@@ -34,7 +35,7 @@ public class BerlinClock
         };
 
         ClockController clockController = new BerlinClockController(new TextBerlinClockView(
-                printManager), new DefaultClockManager());
+                printManager), ClockManagerFactory.getClockManager());
 
         System.out.println("Input       Result");
         System.out.print("00:00:00");
