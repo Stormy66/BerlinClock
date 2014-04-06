@@ -10,7 +10,7 @@ import static org.junit.Assert.assertThat;
  *
  * @author Kieran Rafferty
  */
-public abstract class TestAbstractClockController
+public abstract class AbstractTestClockController
 {
     private AbstractClockController controller;
 

@@ -12,7 +12,7 @@ import org.mockito.Mock;
 
 import com.inkglobal.techtest.clock.AbstractClockController;
 import com.inkglobal.techtest.clock.ClockManager;
-import com.inkglobal.techtest.clock.TestAbstractClockController;
+import com.inkglobal.techtest.clock.AbstractTestClockController;
 import com.inkglobal.techtest.clock.view.BerlinClockView;
 import com.inkglobal.techtest.clock.view.configuration.ClockConfiguration;
 import com.inkglobal.techtest.mocks.MockBerlinClockController;
@@ -25,7 +25,7 @@ import com.inkglobal.techtest.util.ExceptionTester;
  *
  * @author Kieran Rafferty
  */
-public class BerlinClockControllerTest extends TestAbstractClockController
+public class BerlinClockControllerTest extends AbstractTestClockController
 {
     private static final String CANNOT_BE_NULL_MESSAGE = "%s cannot be null.";
 
